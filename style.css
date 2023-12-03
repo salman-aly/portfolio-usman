@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    /* background-image: url("public/download.png"); */
+    background-color: #232946;
+}
+.side-bar{
+    margin-top: 160px;
+    height: 420px;
+}
 
-
-
-/* body{
-    background-image: url("public/download.png");
-} */
+.center-bar{
+    margin-top: 140px;
+}
