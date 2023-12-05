@@ -17,16 +17,22 @@ body{
     margin-top: 160px;
     /* height: 420px; */
 }
-
 .center-bar{
-    width: 50%;
-    border:solid;
+    width: 40%;
+    /* border:solid; */
     margin-top: 140px;
+}
+.typewrite{
+    font-size: 40px;
+}
+.inform-button{
+    margin-top: 30px;
 }
 .inform-button button{
     width: 50%;
     height: 60px; 
 }
+
 .word{
     /* word-wrap: break-word; */
     word-wrap: none;
@@ -45,19 +51,43 @@ body{
 }
 
 @media only screen and (max-width : 767px) {
+    .center-bar{
+        margin-left:28% ;
+        width: 100%;
+        margin-top: 100px;
+     }
     .rigth-side{
         display: none;
     }
    .typewrite{
-    font-size: 20px;
+    font-size: 30px;
     word-wrap: break-word;
    }
 }
+@media only screen and (max-width : 640px) { 
+    .inform-button{
+        flex-direction: column;
+    }
+    .inform-button button{
+        width: 80%;
+       }
+       .side-bar>div{
+        /* height: ; */
+       }
+       .font-icon{
+        font-size: 20px;
+       }
+ }
+
 @media only screen and (max-width : 400px) {  
 /*   center box  */
 .center-bar{
-   margin-left:25% ;
+   margin-left:28% ;
+   width: 100%;
    margin-top: 100px;
+}
+.typewrite{
+    font-size: 28px;
 }
 
 /* center box button */
