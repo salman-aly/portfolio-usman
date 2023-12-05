@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,22 +8,63 @@ body{
     /* background-image: url("public/download.png"); */
     background-color: #232946;
     color: #fff;
+    font-size: 100%;
 }
 .nav{
-    width: 100%;
+    min-width: 100%;
 }
 .side-bar{
     margin-top: 160px;
-    height: 420px;
+    /* height: 420px; */
 }
 
 .center-bar{
+    width: 50%;
+    border:solid;
     margin-top: 140px;
 }
-.cv button{
+.inform-button button{
     width: 50%;
-    height: 60px;
+    height: 60px; 
 }
-.cv{
-    width: 400px;
+.word{
+    /* word-wrap: break-word; */
+    word-wrap: none;
+}
+
+/* ================= rigth side top ============= */
+.rigth-side{
+    margin-top: 140px;
+/* width: 200px; */
+}
+.rigth-side>img{
+    width: 95%;
+    object-fit: contain;
+    /* height: auto; */
+    padding-top: 12%;
+}
+
+@media only screen and (max-width : 767px) {
+    .rigth-side{
+        display: none;
+    }
+   .typewrite{
+    font-size: 20px;
+    word-wrap: break-word;
+   }
+}
+@media only screen and (max-width : 400px) {  
+/*   center box  */
+.center-bar{
+   margin-left:25% ;
+   margin-top: 100px;
+}
+
+/* center box button */
+        .inform-button{
+            flex-direction: column;
+        }
+       .inform-button button{
+        width: 100%;
+       }
 }
