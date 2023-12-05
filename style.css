@@ -7,6 +7,10 @@
 body{
     /* background-image: url("public/download.png"); */
     background-color: #232946;
+    color: #fff;
+}
+.nav{
+    width: 100%;
 }
 .side-bar{
     margin-top: 160px;
@@ -15,4 +19,11 @@ body{
 
 .center-bar{
     margin-top: 140px;
+}
+.cv button{
+    width: 50%;
+    height: 60px;
+}
+.cv{
+    width: 400px;
 }
