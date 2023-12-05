@@ -9,27 +9,29 @@ body{
     background-color: #232946;
     color: #fff;
     font-size: 100%;
+    overflow-x: hidden;
 }
 .nav{
     min-width: 100%;
 }
 .side-bar{
-    margin-top: 160px;
+    margin-top: 190px;
     /* height: 420px; */
 }
 .center-bar{
     width: 40%;
     /* border:solid; */
-    margin-top: 140px;
+    margin-top: 170px;
 }
 .typewrite{
+    font-weight: bold;
     font-size: 40px;
 }
 .inform-button{
     margin-top: 30px;
 }
 .inform-button button{
-    width: 50%;
+    width: 55%;
     height: 60px; 
 }
 
@@ -49,11 +51,47 @@ body{
     /* height: auto; */
     padding-top: 12%;
 }
+/* ============================= SKILL =================== */
+.skill-parent{
+    margin-left: 15%;
+    /* margin-top: 10px; */
+}
+.skill{
+    /* margin-top: 20px; */
+    justify-content: space-around;
+}
+.skill-child{
+    border: solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
 
+}
+.skill-image{
+    width: 50%;
+    height:90px ;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.skill-image>img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+/* ==================================================================== */
+/* ============================== project ============================= */
+/* ==================================================================== */
+.project-parent{
+    margin-left: 15%;
+}
 @media only screen and (max-width : 767px) {
     .center-bar{
         margin-left:28% ;
-        width: 100%;
+        width: 95%;
         margin-top: 100px;
      }
     .rigth-side{
@@ -63,6 +101,14 @@ body{
     font-size: 30px;
     word-wrap: break-word;
    }
+   .skill{
+    flex-direction: column;
+}
+.skill-child{
+       width: 100%;
+
+   }
+ 
 }
 @media only screen and (max-width : 640px) { 
     .inform-button{
@@ -71,18 +117,19 @@ body{
     .inform-button button{
         width: 80%;
        }
-       .side-bar>div{
-        /* height: ; */
-       }
+     
        .font-icon{
-        font-size: 20px;
+        height: 40px;
+       }
+       .font-icon i{
+        font-size: 25px;
        }
  }
 
 @media only screen and (max-width : 400px) {  
 /*   center box  */
 .center-bar{
-   margin-left:28% ;
+   margin-left:25% ;
    width: 100%;
    margin-top: 100px;
 }
@@ -95,6 +142,6 @@ body{
             flex-direction: column;
         }
        .inform-button button{
-        width: 100%;
+        width: 95%;
        }
 }
