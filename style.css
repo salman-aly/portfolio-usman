@@ -13,6 +13,7 @@ body{
 }
 .nav{
     min-width: 100%;
+    text-transform: uppercase;
 }
 
 .nav img{
