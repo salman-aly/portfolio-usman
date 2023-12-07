@@ -1,72 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     /* background-image: url("public/download.png"); */
     background-color: #232946;
     color: #fff;
     font-size: 100%;
     overflow-x: hidden;
 }
-.nav{
+
+.nav {
     min-width: 100%;
     text-transform: uppercase;
-    background-color: #fff;
 }
 
-.nav img{
+.nav img {
     height: 70px;
 }
-.side-bar{
+
+.side-bar {
     margin-top: 190px;
     /* height: 420px; */
 }
-.center-bar{
+
+.center-bar {
     width: 40%;
     /* border:solid; */
     margin-top: 170px;
 }
-.typewrite{
+
+.typewrite {
     font-weight: bold;
     font-size: 40px;
 }
-.inform-button{
+
+.inform-button {
     margin-top: 30px;
 }
-.inform-button button{
+
+.inform-button button {
     width: 55%;
-    height: 60px; 
+    height: 60px;
 }
 
-.word{
+.word {
     /* word-wrap: break-word; */
     word-wrap: none;
 }
 
 /* ================= rigth side top ============= */
-.rigth-side{
+.rigth-side {
     margin-top: 140px;
-/* width: 200px; */
+    /* width: 200px; */
 }
-.rigth-side>img{
+
+.rigth-side>img {
     width: 95%;
     object-fit: contain;
     /* height: auto; */
     padding-top: 12%;
 }
+
 /* ============================= SKILL =================== */
-.skill-parent{
+.skill-parent {
     margin-left: 15%;
     /* margin-top: 10px; */
 }
-.skill{
+
+.skill {
     /* margin-top: 20px; */
     justify-content: space-around;
 }
-.skill-child{
+
+.skill-child {
     border: solid 1px;
     display: flex;
     justify-content: space-between;
@@ -76,78 +85,92 @@ body{
     margin-top: 20px;
 
 }
-.skill-image{
+
+.skill-image {
     width: 50%;
-    height:90px ;
+    height: 90px;
     align-items: center;
     font-weight: bolder;
     font-size: 20px;
 }
+
 .skill-image>img {
     width: 30%;
     height: auto;
     object-fit: contain;
 }
+
 /* ==================================================================== */
 /* ============================== project ============================= */
 /* ==================================================================== */
-.project-parent{
+.project-parent {
     margin-left: 15%;
 }
+
 @media only screen and (max-width : 767px) {
-    .center-bar{
-        margin-left:28% ;
+    .center-bar {
+        margin-left: 28%;
         width: 95%;
         margin-top: 100px;
-     }
-    .rigth-side{
+    }
+
+    .rigth-side {
         display: none;
     }
-   .typewrite{
-    font-size: 30px;
-    word-wrap: break-word;
-   }
-   .skill{
-    flex-direction: column;
-}
-.skill-child{
-       width: 100%;
 
-   }
- 
-}
-@media only screen and (max-width : 640px) { 
-    .inform-button{
+    .typewrite {
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+
+    .skill {
         flex-direction: column;
     }
-    .inform-button button{
+
+    .skill-child {
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (max-width : 640px) {
+    .inform-button {
+        flex-direction: column;
+    }
+
+    .inform-button button {
         width: 80%;
-       }
-     
-       .font-icon{
+    }
+
+    .font-icon {
         height: 40px;
-       }
-       .font-icon i{
+    }
+
+    .font-icon i {
         font-size: 25px;
-       }
- }
-
-@media only screen and (max-width : 400px) {  
-/*   center box  */
-.center-bar{
-   margin-left:25% ;
-   width: 100%;
-   margin-top: 100px;
-}
-.typewrite{
-    font-size: 28px;
+    }
 }
 
-/* center box button */
-        .inform-button{
-            flex-direction: column;
-        }
-       .inform-button button{
+@media only screen and (max-width : 400px) {
+
+    /*   center box  */
+    .center-bar {
+        margin-left: 25%;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .typewrite {
+        font-size: 28px;
+    }
+
+    /* center box button */
+    .inform-button {
+        flex-direction: column;
+    }
+
+    .inform-button button {
         width: 95%;
-       }
+    }
 }
