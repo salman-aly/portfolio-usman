@@ -1,176 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    /* background-image: url("public/download.png"); */
-    background-color: #232946;
-    color: #fff;
-    font-size: 100%;
-    overflow-x: hidden;
+  /* background-image: url("public/download.png"); */
+  background-color: #232946;
+  color: #fff;
+  font-size: 100%;
+  overflow-x: hidden;
 }
 
 .nav {
-    min-width: 100%;
-    text-transform: uppercase;
+  min-width: 100%;
+  text-transform: uppercase;
 }
 
 .nav img {
-    height: 70px;
+  height: 70px;
 }
 
 .side-bar {
-    margin-top: 190px;
-    /* height: 420px; */
+  margin-top: 190px;
+  /* height: 420px; */
 }
 
 .center-bar {
-    width: 40%;
-    /* border:solid; */
-    margin-top: 170px;
+  width: 40%;
+  /* border:solid; */
+  margin-top: 170px;
 }
 
 .typewrite {
-    font-weight: bold;
-    font-size: 40px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .inform-button {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .inform-button button {
-    width: 55%;
-    height: 60px;
+  width: 55%;
+  height: 60px;
 }
 
 .word {
-    /* word-wrap: break-word; */
-    word-wrap: none;
+  /* word-wrap: break-word; */
+  word-wrap: none;
 }
 
 /* ================= rigth side top ============= */
 .rigth-side {
-    margin-top: 140px;
-    /* width: 200px; */
+  margin-top: 140px;
+  /* width: 200px; */
 }
 
-.rigth-side>img {
-    width: 95%;
-    object-fit: contain;
-    /* height: auto; */
-    padding-top: 12%;
+.rigth-side > img {
+  width: 95%;
+  object-fit: contain;
+  /* height: auto; */
+  padding-top: 12%;
 }
 
 /* ============================= SKILL =================== */
 .skill-parent {
-    margin-left: 15%;
-    /* margin-top: 10px; */
+  margin-left: 15%;
+  /* margin-top: 10px; */
 }
 
 .skill {
-    /* margin-top: 20px; */
-    justify-content: space-around;
+  /* margin-top: 20px; */
+  justify-content: space-around;
 }
 
 .skill-child {
-    border: solid 1px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
-
+  border: solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .skill-image {
-    width: 50%;
-    height: 90px;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 20px;
+  width: 50%;
+  height: 90px;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
-.skill-image>img {
-    width: 30%;
-    height: auto;
-    object-fit: contain;
+.skill-image > img {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ==================================================================== */
 /* ============================== project ============================= */
 /* ==================================================================== */
 .project-parent {
-    margin-left: 15%;
+  margin-left: 15%;
 }
 
-@media only screen and (max-width : 767px) {
-    .center-bar {
-        margin-left: 28%;
-        width: 95%;
-        margin-top: 100px;
-    }
+@media only screen and (max-width: 767px) {
+  .center-bar {
+    margin-left: 28%;
+    width: 95%;
+    margin-top: 100px;
+  }
 
-    .rigth-side {
-        display: none;
-    }
+  .rigth-side {
+    display: none;
+  }
 
-    .typewrite {
-        font-size: 30px;
-        word-wrap: break-word;
-    }
+  .typewrite {
+    font-size: 30px;
+    word-wrap: break-word;
+  }
 
-    .skill {
-        flex-direction: column;
-    }
+  .skill {
+    flex-direction: column;
+  }
 
-    .skill-child {
-        width: 100%;
-
-    }
-
+  .skill-child {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width : 640px) {
-    .inform-button {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 640px) {
+  .inform-button {
+    flex-direction: column;
+  }
 
-    .inform-button button {
-        width: 80%;
-    }
+  .inform-button button {
+    width: 80%;
+  }
 
-    .font-icon {
-        height: 40px;
-    }
+  .font-icon {
+    height: 40px;
+  }
 
-    .font-icon i {
-        font-size: 25px;
-    }
+  .font-icon i {
+    font-size: 25px;
+  }
 }
 
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width: 400px) {
+  /*   center box  */
+  .center-bar {
+    margin-left: 25%;
+    width: 100%;
+    margin-top: 100px;
+  }
 
-    /*   center box  */
-    .center-bar {
-        margin-left: 25%;
-        width: 100%;
-        margin-top: 100px;
-    }
+  .typewrite {
+    font-size: 28px;
+  }
 
-    .typewrite {
-        font-size: 28px;
-    }
+  /* center box button */
+  .inform-button {
+    flex-direction: column;
+  }
 
-    /* center box button */
-    .inform-button {
-        flex-direction: column;
-    }
-
-    .inform-button button {
-        width: 95%;
-    }
+  .inform-button button {
+    width: 95%;
+  }
 }
